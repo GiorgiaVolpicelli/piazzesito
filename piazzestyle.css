@@ -44,6 +44,13 @@ font-size:19px;
 font-weight: 500;
 }
 
+.nav-right a{
+text-decoration:none;
+color:#1F2D39;
+font-size:19px;
+font-weight: 500;
+}
+
 .nav-logo{
 position:absolute;
 left:50%;
@@ -135,14 +142,14 @@ display:block;
   width: 30%;                   
   margin-top: -250px;
   margin-left: 550px;
-  transform: scale(1.5) translateY(-20px) translateX(60px); 
+  transform: scale(1.5) translateY(-50px) translateX(200px); 
 }
 
 .map-imageragusa {
   width: 30%;                   
   margin-top: -250px;
   margin-left: 550px;
-  transform: scale(1.5) translateY(-10px) translateX(85px); 
+  transform: scale(1.5) translateY(-10px) translateX(200px); 
 }
 
 .lineamappa {
@@ -162,7 +169,7 @@ display:block;
   display:inline-block;
   transition:0.3s;
   font-size: 13px;
-  transform: translateY(-5px) translateX(400px);
+  transform: translateY(-20px) translateX(530px);
 }
 
 .pulsantemappa2 {
@@ -174,7 +181,7 @@ display:block;
   display:inline-block;
   transition:0.3s;
   font-size: 13px;
-  transform: translateY(-33px) translateX(400px);
+  transform: translateY(-33px) translateX(600px);
 }
 
 .pulsantemappa3 {
@@ -186,7 +193,7 @@ display:block;
   display:inline-block;
   transition:0.3s;
   font-size: 13px;
-  transform: translateY(-60px) translateX(420px);
+  transform: translateY(-60px) translateX(560px);
 }
 
 /* PARAGRAFI */
@@ -215,12 +222,11 @@ p{
 }
 
 .image-wrapper {
-  width: 350px;
-  height: 350px;
-  margin: 60px auto;
-  border-radius: 50%;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.8);
+ width: min(100%, 997px);
+  height: clamp(200px, 40vw, 336px);
+  border-radius: 92px;
+  overflow: hidden;   
+  margin: 70px auto 0;
 }
 
 .image {
@@ -229,36 +235,16 @@ p{
   object-fit: cover;
 }
 
-/* CURIOSITÀ */
 
-.curiosita-box{
-  background-color:#5a656f;
-  background-image: url(img/sicilia\ bianca.png);
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: 500px;
-  background-blend-mode: soft-light;
-  max-width:900px;
-  margin:80px auto;
-  padding:50px;
-  border-radius:90px;
-  line-height:1.6;
+.img-home {
+  width: min(100%, 997px);
+  height: clamp(200px, 40vw, 336px);
+  border-radius: 92px;
+  overflow: hidden;   
+  margin: 70px auto 0;
 }
 
-.curiosita-box h2{
-  font-size:28px;
-  margin-bottom:20px;
-  font-weight: normal;
-  color:white;
-  text-align:center;
-}
 
-.curiosita-box p{
-  font-size:16px;
-  margin-bottom:20px;
-  color: white;
-  margin-left: 35px;
-}
 
 /* ALTRE PIAZZE */
 
@@ -325,12 +311,12 @@ h3{
 
 .footer{
   background:#47535D;
-  padding:70px;
-  padding-bottom:30px;
-  max-width:1000px;
-  width:90%;
+  padding: 45px;
+  padding-bottom:20px;
+  max-width:750px;
+  width:80%;
   margin:0 auto;
-  border-radius:100px 100px 0 0;
+  border-radius:80px 80px 0 0;
 }
 
 .footer-container {
@@ -354,7 +340,7 @@ h3{
 
 .contatti p{
   margin:0;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .social{
@@ -363,7 +349,7 @@ h3{
 
 .social p{
   margin:0;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .icone-social{
@@ -373,21 +359,21 @@ h3{
 }
 
 .icone-social img{
-  width: 30px;
+  width: 20px;
   margin-right:10px;
 }
 
 .copyright{
-  font-size:12px;
+  font-size:8px;
   opacity:0.7;
   line-height:1.5;
 }
 
 .footer-newsletter{
   position:absolute;
-  top:80%;
+  top:50%;
   right:50%;
-  transform:translate(-50%, -50%);
+  transform:translate( -10%);
   text-align:center;
   color:white;
   z-index:2;
@@ -409,7 +395,7 @@ h3{
   text-decoration:none;
   display:inline-block;
   transition:0.3s;
-  font-size: 13px;
+  font-size: 10px;
 }
 
 .newsletter-btn:hover{
@@ -418,10 +404,10 @@ h3{
 }
 
 .footer-mappa img{
-  width:420px;
+  width:320px;
   height:auto;
   display:block;
-  transform:scale(1.5) translateY(-20px) translateX(-10px);
+  transform:scale(1.2) translateY(-25px) translateX(-8px);
   transform-origin: center;
 }
 
@@ -430,7 +416,7 @@ h3{
 }
 
 h4 {
-  font-size: 19px;
+  font-size: 12px;
 }
 
 
@@ -456,14 +442,14 @@ h4 {
 
 /* LINEA */
 .line{
-    top: 100px;
+    top: 130px;
     left: 5vw;
     right: 5vw;
 }
 
 /* HERO */
 .hero-title{
-    bottom: 12vh;
+    bottom: 5vh;
     white-space: normal;
     width: 80%;
 }
@@ -474,11 +460,11 @@ h4 {
 
 /* INTRO */
 .intro-container{
-    padding: 1rem 5vw 3rem 5vw;
+    padding: 1rem 0vw 0rem 15vw;
     font-size: 1.05rem;
 }
 
-/* MAPPA — reset trasformazioni su tablet */
+
 .map-image,
 .map-imageragusa{
     width: 35%;
@@ -518,22 +504,6 @@ p{
     height: 280px;
 }
 
-/* CURIOSITÀ */
-.curiosita-box{
-    width: 92%;
-    padding: 40px 36px;
-    border-radius: 60px;
-    background-size: 380px;
-}
-.curiosita-box p{
-    margin-left: 10px;
-}
-
-/* H3 ALTRE PIAZZE */
-h3{
-    padding-left: 5vw;
-    margin-top: 50px;
-}
 
 /* ALTRE PIAZZE */
 .altre-piazze{
@@ -574,8 +544,7 @@ h3{
 /* NAVBAR: logo sopra centrato, link + search in riga sotto */
 .navbar{
     position: absolute;
-    top: 0;
-    flex-direction: column;
+    top: 30px;
     align-items: center;
     gap: 10px;
     padding: 16px 5vw 0;
@@ -592,10 +561,21 @@ h3{
     gap: 20px;
     align-items: center;
 }
-.nav-left a{
-    font-size: 0.9rem;
+
+.nav-right a  {
+    text-decoration: none;
+    color: #1F2D39;
+    font-size: 19px;
+    font-weight: 500;
 }
-/* search: torna nel flusso, inline accanto ai link */
+
+.nav-left a {
+text-decoration: none;
+    color: #1F2D39;
+    font-size: 19px;
+    font-weight: 500;
+}
+
 .nav-right{
     position: static;
 }
@@ -605,7 +585,7 @@ h3{
 
 /* LINEA */
 .line{
-    top: 110px;
+    top: 80px;
     left: 5vw;
     right: 5vw;
 }
@@ -625,7 +605,7 @@ h3{
 
 /* INTRO */
 .intro-container{
-    padding: 1rem 5vw 2rem 5vw;
+    padding: 1rem 5vw 2rem 15vw;
     font-size: 0.95rem;
     text-align: left;
 }
@@ -635,9 +615,12 @@ h3{
 .map-imageragusa{
     width: 60%;
     max-width: 260px;
-    margin: 20px auto 0;
+    margin-left: auto;
+    margin-right: 4vw;
     transform: none;
+   
 }
+
 .lineamappa{
     width: 70%;
     transform: none;
